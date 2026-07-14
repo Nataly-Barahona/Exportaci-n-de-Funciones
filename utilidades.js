@@ -1,11 +1,17 @@
-export function formatearPrecio(precio) {
+function formatearPrecio(precio) {
     return precio.toLocaleString("es-CO");
 }
 
-export function esEmailValido(email) {
+function esEmailValido(email) {
     return email.includes("@") && email.includes(".");
 }
 
-export function calcularDescuento(precio, porcentaje) {
+function calcularDescuento(precio, porcentaje) {
     return precio - (precio * porcentaje / 100);
 }
+
+export{
+    formatearPrecio,
+    esEmailValido,
+    calcularDescuento
+};
