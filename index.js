@@ -1,6 +1,9 @@
-import utilidades from "./utilidades.js";
+import Producto from "./producto.js";
+import Usuario from "./usuario.js";
+import Carrito from "./carrito.js";
+import { esEmailValido } from "./utilidades.js";
 
-console.log(utilidades.esEmailValido(usuario.email));
+//console.log(utilidades.esEmailValido(usuario.email));
 
 const usuario = new Usuario("miguel", "miguel.12@gmail.com", true);
 

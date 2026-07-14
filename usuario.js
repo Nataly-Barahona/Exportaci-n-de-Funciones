@@ -4,7 +4,7 @@ this.nombre = nombre;
 this.email = email;
 this.esVip = esVip; 
 }
-Saludo(){
-return (`Hola: ${this.nombre}`);
+saludo() {
+    return `Hola: ${this.nombre}`;
 }}
 export default Usuario;

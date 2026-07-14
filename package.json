@@ -1,0 +1,21 @@
+{
+  "name": "tienda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nataly-Barahona/Exportaci-n-de-Funciones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nataly-Barahona/Exportaci-n-de-Funciones/issues"
+  },
+  "homepage": "https://github.com/Nataly-Barahona/Exportaci-n-de-Funciones#readme"
+}
