@@ -1,14 +1,13 @@
-import Producto from "./Producto.js";
-import Usuario from "./Usuario.js";
-import Carrito from "./Carrito.js";
-import { esEmailValido } from "./utilidades.js";
+import utilidades from "./utilidades.js";
 
-const usuario = new Usuario("Nataly", "nataly@gmail.com", true);
+console.log(utilidades.esEmailValido(usuario.email));
+
+const usuario = new Usuario("miguel", "miguel.12@gmail.com", true);
 
 console.log(esEmailValido(usuario.email));
 
-const producto1 = new Producto("Mouse", 50000, "Tecnología", 10);
-const producto2 = new Producto("Teclado", 80000, "Tecnología", 3);
+const producto1 = new Producto("shampoo", 50000, "aseo", 10);
+const producto2 = new Producto("peluche para morder", 80000, "mascotas", 3);
 
 
 const carrito = new Carrito(usuario);
