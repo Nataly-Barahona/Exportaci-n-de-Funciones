@@ -1,8 +1,19 @@
-import Producto from "./producto.js";
-const producto1 = new Producto("shampo", 50000, "aseo", 5 );
-const producto2 = new Producto("Peluche para morder",25000, "mascotas",0);
-const producto3 = new Producto("cerveza",3000, "licores",7);
+import Producto from "./Producto.js";
+import Usuario from "./Usuario.js";
+import Carrito from "./Carrito.js";
+import { esEmailValido } from "./utilidades.js";
 
-console.log(producto1.stock);
-console.log(producto1.hayStock(3));
-console.log(producto1.ficha());
+const usuario = new Usuario("Nataly", "nataly@gmail.com", true);
+
+console.log(esEmailValido(usuario.email));
+
+const producto1 = new Producto("Mouse", 50000, "Tecnología", 10);
+const producto2 = new Producto("Teclado", 80000, "Tecnología", 3);
+
+
+const carrito = new Carrito(usuario);
+
+console.log(carrito.agregar(producto1, 2));
+console.log(carrito.agregar(producto2, 5)); // Debe decir "sin stock"
+
+console.log(carrito.recibo());
