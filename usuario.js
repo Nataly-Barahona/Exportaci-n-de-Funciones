@@ -1,0 +1,10 @@
+class Usuario {
+constructor(nombre,email, esVip) {
+this.nombre = nombre;
+this.email = email;
+this.esVip = esVip; 
+}
+Saludo(){
+return (`Hola: ${this.nombre}`);
+}}
+export default Usuario;
